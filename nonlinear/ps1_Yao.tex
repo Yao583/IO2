@@ -1,0 +1,51 @@
+\documentclass[12pt,one side]{article}\usepackage[utf8]{inputenc}\usepackage[a4 paper]{geometry}\usepackage{graphicx, setspace, appendix, mathrsfs, amsmath, amsfonts, array, tabularx, longtable, rotating, caption, mathtools}\usepackage[english]{babel}\renewcommand{\baselinestretch}{1.25}\doublespacing\title{IO2 problem set 1}\author{Yao Luo}\begin{document}\maketitle
+\section{Question 1}
+The buyer's utility maximization problem is:
+\[max_{q(\theta), T(\theta)}\int_{\underline{\theta}}^{\overline{\theta}}[V(q(\theta)) - T(\theta)]f(\theta)d\theta\]
+subject to\\
+(1) Individual Rationality constraint (IR):
+\[T(\theta) - C(q(\theta),\theta) \geq 0 \; \forall \theta\]
+(2) Incentive Compatibility constraint (IC):
+\[T(\theta) - C(q(\theta),\theta) \geq T(\theta^{'}) - C(q(\theta^{'}),\theta)\;\forall \theta,\theta^{'}\]
+Denote $\pi(\theta,\hat{\theta}) = T(\hat{\theta}) - C(q(\hat{\theta}),\theta)$
+To satisfy the local IC, the FOC with respect to $\hat{\theta}$ is zero.
+\[\frac{d\pi(\theta,\hat{\theta})}{d\theta}= -C_{\theta}(q,\theta) < 0\]
+\[\pi(\theta,\hat{\theta}) \equiv \pi(\theta) = \pi(\overline{\theta}) + \int_{\theta}^{\overline{\theta}} C_{\theta}(q,\theta)\]
+Since the IR constraint binds for the highest type if IC holds, $\pi(\overline{\theta}) = 0$. 
+\[T(\theta) = C(q,\theta) + \int_{\theta}^{\overline{\theta}} C_{\theta}(q,\theta)\]
+Now the relaxed problem of the buyer is:
+\[\underset{q(\theta)}{max}\int_{\underline{\theta}}^{\overline{\theta}}[V(q(\theta)) - C(q,\theta) - \int_{\theta}^{\overline{\theta}} C_{\theta}(q,\theta)]f(\theta)d\theta\]
+Using integration by parts
+	\begin{align*}
+	\int_{\underline{\theta}}^{\overline{\theta}}\int_{\theta}^{\overline{\theta}} C_{\theta}(q(x),x)f(\theta)dxd\theta &= F(\theta)\int_{\theta}^{\overline{\theta}}C_{\theta}(q(x),x)dx\Bigg|_{\underline{\theta}}^{\overline{\theta}} + \int_{\underline{\theta}}^{\overline{\theta}}C_{\theta}(q(\theta),\theta)F(\theta)d\theta\\
+    &= \int_{\underline{\theta}}^{\overline{\theta}} F(\theta)C_{\theta}(q(\theta),\theta)d\theta
+	\end{align*}
+	The relaxed problem is simplified to be:
+	\[\underset{q(\theta)}{max}\int_{\underline{\theta}}^{\overline{\theta}}[V(q(\theta)) - C(q(\theta),\theta) - \frac{F(\theta)}{f(\theta)}C_{\theta}(q(\theta),\theta)]f(\theta)d\theta\]
+	Denote \[\psi(q,\theta) = V(q(\theta)) - C(q(\theta),\theta) - \frac{F(\theta)}{f(\theta)}C_{\theta}(q(\theta),\theta) \]
+	To solve this unconstrained problem, the following conditions should hold:\\
+	(1) FOC
+	\[V_{q}(q) - C_{q}(q,\theta) -\frac{F(\theta)}{f(\theta)}C_{\theta q}(q,\theta) = 0\]
+	(2) SOC
+	\[V_{qq} - C_{qq} - \frac{F(\theta)}{f(\theta)}C_{\theta qq}(q,\theta) \leq 0\]
+	which is satisfied if $C_{\theta qq} \geq 0$\\
+	(3) Global IC\\
+	A sufficient condition for global IC is $\frac{\partial^{2}\pi(\theta, \hat{\theta})}{\partial \hat{\theta}\partial\theta} \geq 0$. Because $\frac{\partial\pi(\theta,\theta)}{\partial\hat{\theta}} = 0$, if $\theta > \hat{\theta}$, $\frac{\partial\pi(\theta,\hat{\theta})}{\partial\hat{\theta}} \geq 0$ so sellers who reported their type below their true type want to increase their reported type $\hat{\theta}$. And if $\theta < \hat{\theta}$, $\frac{\partial\pi(\theta,\hat{\theta})}{\partial\hat{\theta}} \leq 0$ so sellers who reported their type above their true type want to decrease their reported type $\hat{\theta}$. Since
+	\[\frac{\partial^{2}\pi(\theta, \hat{\theta})}{\partial \hat{\theta}\partial\theta} = - C_{q\theta}(q(\hat{\theta}),\theta)\frac{dq(\hat{\theta})}{d\hat{\theta}}\]
+	plus $C_{q\theta} > 0$, the sufficient condition is $\frac{dq(\hat{\theta})}{d\hat{\theta}} \leq 0$. By monotone comparative statics, $\frac{\partial^{2}\psi(q,\theta)}{\partial q\partial\theta} \leq 0$.
+	\[-C_{q\theta}(q,\theta) - \frac{d}{d\theta}[\frac{F(\theta)}{f(\theta)}]C_{q\theta}(q,\theta) - \frac{F(\theta)}{f(\theta)}C_{q\theta\theta} \leq 0\]
+	To satisfy the above inequality, we need to assume $C_{q\theta\theta} \geq 0$.\\
+	From the FOC, 
+	\[P'(q) = V_{q}(q) = C_{q}(q,\theta) + \frac{F(\theta)}{f(\theta)}C_{q\theta}(q,\theta)\]
+	Since $C_{q\theta}(q,\theta)$ is positive, the monopsony purchasing price is higher than the first best case where marginal price equals marginal cost. Because $V_{qq}(q) \leq 0$, the monopsony quantity $q(\theta)$ is lower than the first best quantity $q^{FB}$. Since $F(\underline{\theta}) = 0$, the lowest type is not distorted so $q(\underline{\theta}) = q^{FB}$.
+
+
+\section{Question 2}
+\begin{enumerate}
+	\item
+	\item
+	\item
+\end{enumerate}
+\section{Question 3}
+
+\end{document}

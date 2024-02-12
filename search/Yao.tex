@@ -1,0 +1,115 @@
+\documentclass[dvipsnames,mathserif]{beamer}
+\setbeamertemplate{footline}[frame number]
+\setbeamercolor{footline}{fg=black}
+\setbeamerfont{footline}{series=\bfseries}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{graphicx, setspace, appendix, mathrsfs, amsmath, amsfonts,caption, mathtools}
+\usepackage[english]{babel}
+%\usetheme{Frankfurt}%1
+\usetheme{Darmstadt}%1
+
+% for RTL liste
+\makeatletter
+\newcommand{\RTListe}{\raggedleft\rightskip\leftm}
+\newcommand{\leftm}{\@totalleftmargin}
+\makeatother
+
+% RTL frame title
+\setbeamertemplate{frametitle}
+{\vspace*{-1mm}
+  \nointerlineskip
+    \begin{beamercolorbox}[sep=0.3cm,ht=2.2em,wd=\paperwidth]{frametitle}
+        \vbox{}\vskip-2ex%
+        \strut\hskip1ex\insertframetitle\strut
+        \vskip-0.8ex%
+    \end{beamercolorbox}
+}
+% align subsection in toc
+\makeatletter
+\setbeamertemplate{subsection in toc}
+{\leavevmode\rightskip=5ex%
+  \llap{\raise0.1ex\beamer@usesphere{subsection number projected}{bigsphere}\kern1ex}%
+  \inserttocsubsection\par%
+}
+\makeatother
+
+% RTL triangle for itemize
+\setbeamertemplate{itemize item}{\scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleleft$}} 
+
+%\setbeamertemplate{itemize item}{\rule{4pt}{4pt}}
+
+\defbeamertemplate{enumerate item}{square2}
+{\LR{
+    %
+    \hbox{%
+    \usebeamerfont*{item projected}%
+    \usebeamercolor[bg]{item projected}%
+    \vrule width2.25ex height1.85ex depth.4ex%
+    \hskip-2.25ex%
+    \hbox to2.25ex{%
+      \hfil%
+      {\color{fg}\insertenumlabel}%
+      \hfil}%
+  }%
+}}
+
+\setbeamertemplate{enumerate item}[square2]
+\setbeamertemplate{navigation symbols}{}
+
+
+\titlegraphic { 
+\begin{tikzpicture}[overlay,remember picture, opacity=0.1,]
+\node[] at (0, 2.9){
+};\end{tikzpicture}}
+\setbeamertemplate{caption}[numbered]
+\begin{document}
+
+\rightskip\rightmargin
+\title{Intermediation and Competition in Search Markets}
+\author{Tobias Salz(2022)}
+
+
+%\institute{Boston College}
+\footnotesize{\date{\today }
+
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+
+%
+\footnotesize \tableofcontents
+%
+\section{Motivation}
+\begin{frame}{Motivation}
+What are the effects of intermediation in a decentralized market?
+    \begin{itemize}
+    \item New data from the New York City trade waste industry.
+    \item The large number of suppliers + prices are individually negotiated between customers and carters $\rightarrow$ the search process is costly for buyers.
+    \end{itemize}  
+\end{frame}
+
+
+\section{Findings}
+\begin{frame}{Findings}
+    \begin{itemize}
+        \item Make a contribution to the literature by introducing a new search model, which considers idiosyncratic service costs from the sellers.
+        \item Direct effect: Buys contract with intermediaries benefit from better "search technology", thus lower their search cost. 
+        \item Indirect effect: Search externalities. Self-selection of high search costs buyers into the intermediated market changes the composition of buys in the search market, making it more competitive so sellers would lower the price.
+        \item Welfare effect: improve overall welfare by reducing search costs and reallocating contracts to lower-cost suppliers.
+    \end{itemize}
+\end{frame}
+\section{Discussion}
+\begin{frame}{Discussion}
+    \begin{itemize}
+        \item This paper abstracts from broker competition. A more complex model might be introduced to account for this. 
+        \item This paper restricts the data to only contain consumers who contract with sellers for at least two years, therefore it abstracts from the dynamic decisions of consumers for changing contracts. This restriction could be relaxed in future research.
+        \item This paper assumes all sellers offer the same quality of service and consumers pick the one with the lowest price. Future research could be done by adding quality differentiation to the model.
+
+    \end{itemize}
+\end{frame}
+
+
+\end{document}

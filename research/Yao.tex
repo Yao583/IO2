@@ -1,0 +1,115 @@
+\documentclass[dvipsnames,mathserif]{beamer}
+\setbeamertemplate{footline}[frame number]
+\setbeamercolor{footline}{fg=black}
+\setbeamerfont{footline}{series=\bfseries}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{graphicx, setspace, appendix, mathrsfs, amsmath, amsfonts,caption, mathtools}
+\usepackage[english]{babel}
+%\usetheme{Frankfurt}%1
+\usetheme{Darmstadt}%1
+
+% for RTL liste
+\makeatletter
+\newcommand{\RTListe}{\raggedleft\rightskip\leftm}
+\newcommand{\leftm}{\@totalleftmargin}
+\makeatother
+
+% RTL frame title
+\setbeamertemplate{frametitle}
+{\vspace*{-1mm}
+  \nointerlineskip
+    \begin{beamercolorbox}[sep=0.3cm,ht=2.2em,wd=\paperwidth]{frametitle}
+        \vbox{}\vskip-2ex%
+        \strut\hskip1ex\insertframetitle\strut
+        \vskip-0.8ex%
+    \end{beamercolorbox}
+}
+% align subsection in toc
+\makeatletter
+\setbeamertemplate{subsection in toc}
+{\leavevmode\rightskip=5ex%
+  \llap{\raise0.1ex\beamer@usesphere{subsection number projected}{bigsphere}\kern1ex}%
+  \inserttocsubsection\par%
+}
+\makeatother
+
+% RTL triangle for itemize
+\setbeamertemplate{itemize item}{\scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleleft$}} 
+
+%\setbeamertemplate{itemize item}{\rule{4pt}{4pt}}
+
+\defbeamertemplate{enumerate item}{square2}
+{\LR{
+    %
+    \hbox{%
+    \usebeamerfont*{item projected}%
+    \usebeamercolor[bg]{item projected}%
+    \vrule width2.25ex height1.85ex depth.4ex%
+    \hskip-2.25ex%
+    \hbox to2.25ex{%
+      \hfil%
+      {\color{fg}\insertenumlabel}%
+      \hfil}%
+  }%
+}}
+
+\setbeamertemplate{enumerate item}[square2]
+\setbeamertemplate{navigation symbols}{}
+
+
+\titlegraphic { 
+\begin{tikzpicture}[overlay,remember picture, opacity=0.1,]
+\node[] at (0, 2.9){
+};\end{tikzpicture}}
+\setbeamertemplate{caption}[numbered]
+\begin{document}
+
+\rightskip\rightmargin
+\title{Inner Mongolia Centralized College Admissions Mechanism}
+\author{Yao Luo}
+
+
+%\institute{Boston College}
+\footnotesize{\date{\today }
+
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+
+%
+\footnotesize \tableofcontents
+%
+\section{Motivation}
+\begin{frame}{Motivation}
+    \begin{itemize}
+    \item Over 10 million high school graduates join in the National College Entrance Examination (gaokao) competing for about 7 million seats. The largest centralized matching market in the world.\\
+    \item Parallel mechanism (PA): ranked list of colleges and majors. Hebei province 5 colleges 5 majors under each college. Option of agreeing to be allocated to another major not in the list.\\
+    \item Dynamic mechanism begining from 2006: report choice on the online system, know your ranking in that major as well as the capacity. Unlimited times of reporting, but have time constraints. 8am, 11am (above 670), 12pm (640-669)...20pm (below 460)\\
+    \item 2023 gaokao Inner Mongolia 185K applicants. Hebei province 753K. Henan province 1.25 million. Ordos has the highest GDP per capita.\\
+    \end{itemize}  
+\end{frame}
+
+
+\section{Research Question}
+\begin{frame}{Research Question}
+    \begin{itemize}
+        \item Which mechanism results in better assignment outcomes? Parallel mechanism or dynamic matching?\\
+        \item Is there good compromise between the computational burden of dynamic matching and matching efficiency?\\
+        \item Existing literature: one working paper 
+    \end{itemize}
+\end{frame}
+\section{Data}
+\begin{frame}{Data}
+    \begin{itemize}
+        \item Ideally, student-major pairs.
+        \item Full distribution of the exam grades. 651-13, 650-10, 649-30.\\
+        \item Admission results: college (major) maximum grade, minimum grade, number of students admitted.\\
+
+    \end{itemize}
+\end{frame}
+
+
+\end{document}

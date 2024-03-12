@@ -1,4 +1,4 @@
-\documentclass[12pt,one side]{article}\usepackage[utf8]{inputenc}\usepackage[a4 paper]{geometry}\usepackage{graphicx, setspace, appendix, mathrsfs, enumerate,amsmath, amsfonts, array, tabularx, longtable, rotating, caption, mathtools}\usepackage[english]{babel}\renewcommand{\baselinestretch}{1.25}\doublespacing\title{}\author{}\begin{document}\maketitle
+\documentclass[12pt,one side]{article}\usepackage[utf8]{inputenc}\usepackage[a4 paper]{geometry}\usepackage{graphicx, setspace, appendix, mathrsfs, enumerate,amsmath, amsfonts, array, tabularx, longtable, rotating, caption, mathtools}\usepackage[english]{babel}\renewcommand{\baselinestretch}{1.25}\doublespacing\title{Problem set 3}\author{Yao Luo}\begin{document}\maketitle
 \section{Question 1}
 The switching costs from low to high are: $A < B < C$.\\
 When $p_B$ changes from 15 to 10 in period 4, case C has less people switch from A to B compared to case B, therefore C has higher switching costs. In case A even when prices don't change there are switchers, while in case B and C there are no switchers when prices do not change. Therefore, case A has the lowest switching costs.
@@ -6,11 +6,33 @@ When $p_B$ changes from 15 to 10 in period 4, case C has less people switch from
 \section{Question 2}
 \begin{enumerate}[1]
 	\item
-	The consumer will search for $k$ times
+	In period 1, the consumer's expected payment of searching is:
+	\begin{align*}
+	P_1 &= c + Pr(p_1 + s < p_0)E[p_1+s|p_1+s<p_0] + Pr(p_1+s >=p_0)p_0\\
+		&= c -\frac{p_0^2}{20}+\frac{s^2}{20} + p_0
+	\end{align*}
+	The consumer would search in period 1 if \[P_1 < p_0 \quad\Rightarrow\quad c -\frac{p_0^2}{20}+\frac{s^2}{20} < 0\]
+	Denote $p_j^m = min{p_0, p_1, p_2, ..., p_j}$. In period 2, the consumer knows about $p_1$, and the expected payment of searching is:
+	\begin{align*}
+	P_2 &= c + Pr(p_2 + s < p_1^m)E[p_2 + s|p_2+s<p_1^m] + Pr(p_2+s >= p_1^m)p_1^m\\
+	& = c - \frac{(p_1^m)^2}{20} + \frac{s^2}{20} + p_1^m
+	\end{align*}
+	The consumer would search in period 2 if \[P_2 < p_1^m \quad\Rightarrow\quad c -\frac{(p_1^m)^2}{20}+\frac{s^2}{20} < 0\]
+	Similarly, in period t, the consumer would search if
+	\[c -\frac{(p_{t-1}^m)^2}{20}+\frac{s^2}{20} < 0\]
 	\item
+	\begin{align*}
+	Pr(no \; switch)&= Pr(no\;search) + Pr(p_0 = p_N^m)\\
+					&= Pr(p_0^2 < 20c+s^2) + (\frac{10-p_0+s}{10})^N\\
+					&= \frac{\sqrt{20c+s^2}}{10} + (\frac{10-p_0+s}{10})^N\\
+	Pr(switch) &= 1 - Pr(no\;switch)\\
+	& = 1 - \frac{\sqrt{20c+s^2}}{10} - (\frac{10-p_0+s}{10})^N
+	\end{align*}
+
 	\item
 	Increasing $c$ by $\varepsilon$ reduces the probability of switching more, since the consumer needs to pay the search cost $c$ for every search and only need to pay the switch cost $s$ once if the consumer chose to switch.
 	\item
+	A \$1 search cost with no switing cost would decrease the probability of switching more, so would have a higher equilibrium price.
 \end{enumerate}
 
 \end{document}

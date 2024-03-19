@@ -1,0 +1,113 @@
+\documentclass[dvipsnames,mathserif]{beamer}
+\setbeamertemplate{footline}[frame number]
+\setbeamercolor{footline}{fg=black}
+\setbeamerfont{footline}{series=\bfseries}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{graphicx, setspace, appendix, mathrsfs, amsmath, amsfonts,caption, mathtools}
+\usepackage[english]{babel}
+%\usetheme{Frankfurt}%1
+\usetheme{Darmstadt}%1
+
+% for RTL liste
+\makeatletter
+\newcommand{\RTListe}{\raggedleft\rightskip\leftm}
+\newcommand{\leftm}{\@totalleftmargin}
+\makeatother
+
+% RTL frame title
+\setbeamertemplate{frametitle}
+{\vspace*{-1mm}
+  \nointerlineskip
+    \begin{beamercolorbox}[sep=0.3cm,ht=2.2em,wd=\paperwidth]{frametitle}
+        \vbox{}\vskip-2ex%
+        \strut\hskip1ex\insertframetitle\strut
+        \vskip-0.8ex%
+    \end{beamercolorbox}
+}
+% align subsection in toc
+\makeatletter
+\setbeamertemplate{subsection in toc}
+{\leavevmode\rightskip=5ex%
+  \llap{\raise0.1ex\beamer@usesphere{subsection number projected}{bigsphere}\kern1ex}%
+  \inserttocsubsection\par%
+}
+\makeatother
+
+% RTL triangle for itemize
+\setbeamertemplate{itemize item}{\scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleleft$}} 
+
+%\setbeamertemplate{itemize item}{\rule{4pt}{4pt}}
+
+\defbeamertemplate{enumerate item}{square2}
+{\LR{
+    %
+    \hbox{%
+    \usebeamerfont*{item projected}%
+    \usebeamercolor[bg]{item projected}%
+    \vrule width2.25ex height1.85ex depth.4ex%
+    \hskip-2.25ex%
+    \hbox to2.25ex{%
+      \hfil%
+      {\color{fg}\insertenumlabel}%
+      \hfil}%
+  }%
+}}
+
+\setbeamertemplate{enumerate item}[square2]
+\setbeamertemplate{navigation symbols}{}
+
+
+\titlegraphic { 
+\begin{tikzpicture}[overlay,remember picture, opacity=0.1,]
+\node[] at (0, 2.9){
+};\end{tikzpicture}}
+\setbeamertemplate{caption}[numbered]
+\begin{document}
+
+\rightskip\rightmargin
+\title{A Supply and Demand Framework for Two-Sided Matching Markets}
+\author{Azevedo and Leshno (2016)}
+
+
+%\institute{Boston College}
+\footnotesize{\date{\today }
+
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+
+%
+\footnotesize \tableofcontents
+%
+\section{Findings}
+\begin{frame}{Findings}
+    \begin{itemize}
+        \item Develop a supply and demand framework for the matching markets. Stable matchings correspond to solutions of supply and demand equations. The selectivity of each college plays a similar role of prices.\\
+        \item Whether competition between public schools improves school quality? Weakly positive direct effect and ambiguous market effect (negative if quality improvement leads to decreasing cutoff in other schools). Depending on conditions, schools have muted incentives to invest in quality improvements for lower-ranked students.\\
+        
+    \end{itemize}
+\end{frame}
+
+\section{Contributions}
+\begin{frame}{Contributions}
+    \begin{itemize}
+    \item Complements existing matching literature which either focus on assortative matching or using models based on Gale and Shapley. Focus on a continuum of agents only on one side of the market. Derive comparative statics and large-market results.\\
+    \item Apply supply and demand framework to two-sided matching markets.\\
+    \item Give convergence results to clarify when the continuum model is a good approximation to real markets. It characterizes the asymptotics of a large class of matching mechanisms such as deferred acceptance with single tie breaking.
+    \end{itemize}  
+\end{frame}
+
+\section{Discussion}
+\begin{frame}{Discussion}
+    \begin{itemize}
+        \item Theoretic paper. It would be nice to use school choice data to empirically prove the predictions of the theory.\\
+        \item Some variables might be hard to quantify. For example, how to quantify the quality improvement after the school's investment.
+
+    \end{itemize}
+\end{frame}
+
+
+\end{document}

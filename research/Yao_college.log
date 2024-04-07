@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.12)  1 APR 2024 23:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.16)  7 APR 2024 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**literature.tex
-(./literature.tex
+**Yao_college.tex
+(./Yao_college.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
@@ -87,10 +87,6 @@ Package: appendix 2020/02/08 v1.2c extra appendix facilities
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup4
 )
-(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks20
-)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip49
@@ -101,7 +97,7 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks21
+\@emptytoks=\toks20
 \ex@=\dimen149
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -131,21 +127,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \dotsspace@=\muskip16
 \c@parentequation=\count272
 \dspbrk@lvl=\count273
-\tag@help=\toks22
+\tag@help=\toks21
 \row@=\count274
 \column@=\count275
 \maxfields@=\count276
-\andhelp@=\toks23
+\andhelp@=\toks22
 \eqnshift@=\dimen152
 \alignsep@=\dimen153
 \tagshift@=\dimen154
 \tagwidth@=\dimen155
 \totwidth@=\dimen156
 \lineht@=\dimen157
-\@envbody=\toks24
+\@envbody=\toks23
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks25
+\mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 )
@@ -162,7 +158,7 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen158
 \ar@mcellbox=\box52
 \extrarowheight=\dimen159
-\NC@list=\toks26
+\NC@list=\toks25
 \extratabsurround=\skip52
 \backup@length=\skip53
 \ar@cellbox=\box53
@@ -175,7 +171,7 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@target=\dimen163
 \TX@delta=\dimen164
 \TX@cols=\count277
-\TX@ftn=\toks27
+\TX@ftn=\toks26
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
@@ -194,7 +190,7 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LT@rows=\count280
 \c@LT@tables=\count281
 \c@LT@chunks=\count282
-\LT@p@ftn=\toks28
+\LT@p@ftn=\toks27
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
@@ -206,7 +202,7 @@ Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 \rotFPtop=\skip58
 \rotFPbot=\skip59
 \rot@float@box=\box59
-\rot@mess@toks=\toks29
+\rot@mess@toks=\toks28
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2022/03/01 v3.6b Customizing captions (AR)
@@ -232,35 +228,28 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 )
-(/usr/local/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip60
-\bibsep=\skip61
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count286
-)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2022/02/07 v1.28a mathematical typesetting tools
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count287
-\calc@Bcount=\count288
+\calc@Acount=\count286
+\calc@Bcount=\count287
 \calc@Adimen=\dimen174
 \calc@Bdimen=\dimen175
-\calc@Askip=\skip62
-\calc@Bskip=\skip63
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count289
-\calc@Cskip=\skip64
+\calc@Ccount=\count288
+\calc@Cskip=\skip62
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count290
+\g_MT_multlinerow_int=\count289
 \l_MT_multwidth_dim=\dimen176
-\origjot=\skip65
+\origjot=\skip63
 \l_MT_shortvdotswithinadjustabove_dim=\dimen177
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen178
 \l_MT_above_intertext_sep=\dimen179
@@ -272,13 +261,13 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2022/02/26 3.73 The Babel package
-\babel@savecnt=\count291
+\babel@savecnt=\count290
 \U@D=\dimen184
 \l@unhyphenated=\language87
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count292
+\bbl@dirlevel=\count291
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
@@ -291,11 +280,11 @@ Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count293
+\l__color_backend_stack_int=\count292
 \l__pdf_internal_box=\box61
 )
-(./literature.aux)
-\openout1 = `literature.aux'.
+(./Yao_college.aux)
+\openout1 = `Yao_college.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
@@ -348,17 +337,17 @@ LaTeX Font Info:    ... okay on input line 1.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count294
+\scratchcounter=\count293
 \scratchdimen=\dimen185
 \scratchbox=\box62
-\nofMPsegments=\count295
-\nofMParguments=\count296
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count297
+\nofMPsegments=\count294
+\nofMParguments=\count295
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count296
 \MPscratchDim=\dimen186
-\MPnumerator=\count298
-\makeMPintoPDFobject=\count299
-\everyMPtoPDFconversion=\toks31
+\MPnumerator=\count297
+\makeMPintoPDFobject=\count298
+\everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -415,27 +404,88 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(./literature.bbl) [1
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./lite
-rature.aux) ) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+[1
+
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+LaTeX Warning: Citation `Chen.Pereyra.ea22' on page 2 undefined on input line 1
+7.
+
+
+LaTeX Warning: Citation `Kang.Ha.ea23' on page 2 undefined on input line 17.
+
+
+LaTeX Warning: Citation `Immorlica.Leshno.ea20' on page 2 undefined on input li
+ne 18.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+[3]
+! Undefined control sequence.
+l.31 \bibiography
+                 {college}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[4] (./Yao_college.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 7062 strings out of 478268
- 122327 string characters out of 5846347
- 427600 words of memory out of 5000000
- 25168 multiletter control sequences out of 15000+600000
- 474211 words of font info for 48 fonts, out of 8000000 for 9000
+ 6670 strings out of 478268
+ 116978 string characters out of 5846347
+ 425301 words of memory out of 5000000
+ 24786 multiletter control sequences out of 15000+600000
+ 473864 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,67p,639b,214s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-12.pfb>
-Output written on literature.pdf (1 page, 49194 bytes).
+ 60i,6n,67p,616b,214s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on Yao_college.pdf (4 pages, 50824 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 32 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

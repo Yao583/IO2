@@ -1,0 +1,32 @@
+\documentclass[12pt,oneside]{article}\usepackage[utf8]{inputenc}\usepackage[a4paper]{geometry}\usepackage{graphicx,setspace,appendix,mathrsfs,amsmath,amsfonts,array,tabularx,longtable,rotating,caption,mathtools}\usepackage[english]{babel}\renewcommand{\baselinestretch}{1.25}\doublespacing\title{Dynamic Machenism in Inner Mongolia College admission}\author{Yao Luo}\begin{document}\maketitle
+\section{Motivation}
+Every year over 10 million high school graduates join in the National College Entrance Examination (gaokao in mandarin) competing for about 7 million seats. Gaokao is currently the largest centralized matching market in the world. Achieving stable and efficient matching outcomes is extremely important in this market since it affects the welfare of so many students.\\
+
+Most provinces in China adopted the parallel mechanism (PA), where stduents submit a rank-ordered list (ROL) of certain length to the clearinghouse and colleges admit students solely depending on their test scores until their seats are filled. Different provinces might have different requirement for the ROL length. For example, Hebei province allows for 5 colleges 5 majors under each college. Students have the option to agree or disagree with being allocated to another major not in their list within a college in their list.\\
+
+The only exception from the PA mechanism is Inner Mongolia, which adopted the dynamic mechanism in 2006. 
+
+
+Students report their first choice on the online system, and they know their ranking in that major as well as the capacity right after submission. Students have unlimited times of reporting, but with time constraints. For example in 2023, the application process begins at8am, and students with grades above 670 need to finish their application by 11am. Students whose grade fall in the range of 640-669 need to finish their application by 12pm etc. The process ends at 20pm.\\
+
+Only Inner Mongolia can afford to apply this dynamic mechanism for two reasons. First, it is among the provinces with the lowest number of applicants in China. In 2023 gaokao Inner Mongolia has 185K applicants. While Hebei province has 753K applicants and Henan province has 1.25 million applicants. Second, Inner Mongolia has better economic conditions than many other provinces. For example, Ordos, a city in Inner Mongolia, has the highest GDP per capita.\\
+
+In this paper, I want to compare dynamic mathing mechanism with parallel maching mechanism both theoretically and empirically to see which mechanism results in more stable and efficient matching outcomes. And explore a good compromise between the computational burden of dynamic matching and matching efficiency. Take into account the negative impact brought by the time constraint and the corresponding grade cutoffs.\\
+
+\section{Literature Review}
+There have been a few empirical papers on the Inner Mongolia College admission mechanism. \cite{Chen.Pereyra.ea22} focus on the  impact of time-constraint imposed by the authority, and compare the matching outcomes of time-constrained dynamic mechanism (TCDM) with the stduent-proposing deferred acceptance (DA) mechanism. \cite{Kang.Ha.ea23} compares the dynamic matching mechanism with the parallel mechanism using justified envy as a criteria, but their conclusions are counterintuitive. \\
+Theoretically, \cite{Immorlica.Leshno.ea20}
+\section{Data}
+Ideally, the dataset should include all student-major pairs and the whole time-path of college choice revisions.\\
+
+However, the time series woule be enormous to store and the Chinese education authority does not record this data.\\
+
+I have data on the full empirical distribution of the Gaokao exam grades, as well as the number of stduents each major in a specific college admits, and their maximum and minimum grades.\\
+
+The Inner Mongolia education authority publish hourly the current cutoffs, the number of stduents applied to each college and their grades for all college majors. The hourly updated information contains rich information about stduents' application behaviours and preferences. 
+
+\section{Model}
+\section{Empirical Strategy}
+
+\bibiography{college}
+\end{document}

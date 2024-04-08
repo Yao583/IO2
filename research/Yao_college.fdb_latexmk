@@ -1,5 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1712523973 "Yao_college.tex" "Yao_college.pdf" "Yao_college" 1712523974
+["bibtex Yao_college"] 1712539295 "Yao_college.aux" "Yao_college.bbl" "Yao_college" 1712539296
+  "/usr/local/texlive/2022/texmf-dist/bibtex/bst/harvard/agsm.bst" 1136766823 25549 e3d0f1ab4ae55e777f7352db30e2c6f7 ""
+  "Yao_college.aux" 1712539296 1480 59ae745e89b71539e6fa01823a6366e8 "pdflatex"
+  "college.bib" 1712537565 8513 9a8d90714773b575844101b68ced4aeb ""
+  (generated)
+  "Yao_college.bbl"
+  "Yao_college.blg"
+["pdflatex"] 1712539295 "Yao_college.tex" "Yao_college.pdf" "Yao_college" 1712539296
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -12,11 +19,13 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1136768653 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm" 1229303445 688 37338d6ab346c2f1466b29e195316aa4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm" 1229303445 692 1b6510779f0f05e9cbf03e0f6c8361e6 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/babel-english/english.ldf" 1496785618 7008 9ff5fdcc865b01beca2b0fe4a46231d4 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/babel/babel.sty" 1645915365 147649 823237dc86e8acfaa45204ca8085a60e ""
@@ -61,6 +70,7 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/mathtools/mathtools.sty" 1644270001 59398 061078e853e620354ba0437103cbd0fe ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1616101747 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty" 1291685959 45456 1c8843383c0bd05870c45fa0ebea6cc2 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty" 1324344192 22913 a27d7908fc6f0385466454a966a316eb ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/tools/array.sty" 1636758526 12694 6c23725d50ab9d1e2d3ce482c58ffcf3 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/tools/calc.sty" 1622581934 10214 00ce62e730d0cfe22b35e8f1c84949c7 ""
@@ -68,10 +78,11 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty" 1622581934 7147 5ac8a9ef36411064b1a501137af0fa54 ""
   "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
-  "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1673888712 2826435 e798df96c944d72cd7f12ac3353ce77a ""
+  "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1676235414 2826444 f96e568e98788df5bf6064daedca58b7 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Yao_college.aux" 1712523974 692 f1adce7e815573d0ad8500368827a803 "pdflatex"
-  "Yao_college.tex" 1712523973 4154 b74b5c18ff8f08f37566a62da7eeba43 ""
+  "Yao_college.aux" 1712539296 1480 59ae745e89b71539e6fa01823a6366e8 "pdflatex"
+  "Yao_college.bbl" 1712539295 3685 383d2395c8213286a299c2f2b3ad10cf "bibtex Yao_college"
+  "Yao_college.tex" 1712539294 5555 0f7f5f9158d9d4622e9dd401b0ca99d2 ""
   (generated)
   "Yao_college.aux"
   "Yao_college.log"

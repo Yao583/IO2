@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.16)  7 APR 2024 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.12)  7 APR 2024 21:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,15 +259,22 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \xmathstrut@box=\box60
 \xmathstrut@dim=\dimen183
 )
+(/usr/local/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip64
+\bibsep=\skip65
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count290
+)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2022/02/26 3.73 The Babel package
-\babel@savecnt=\count290
+\babel@savecnt=\count291
 \U@D=\dimen184
 \l@unhyphenated=\language87
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count291
+\bbl@dirlevel=\count292
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
@@ -280,7 +287,7 @@ Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count292
+\l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box61
 )
 (./Yao_college.aux)
@@ -337,16 +344,16 @@ LaTeX Font Info:    ... okay on input line 1.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count293
+\scratchcounter=\count294
 \scratchdimen=\dimen185
 \scratchbox=\box62
-\nofMPsegments=\count294
-\nofMParguments=\count295
+\nofMPsegments=\count295
+\nofMParguments=\count296
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count296
+\MPscratchCnt=\count297
 \MPscratchDim=\dimen186
-\MPnumerator=\count297
-\makeMPintoPDFobject=\count298
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
 \everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -403,89 +410,28 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+) [1
 
- []
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-[1
-
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-
- []
-
-
-LaTeX Warning: Citation `Chen.Pereyra.ea22' on page 2 undefined on input line 1
-7.
-
-
-LaTeX Warning: Citation `Kang.Ha.ea23' on page 2 undefined on input line 17.
-
-
-LaTeX Warning: Citation `Immorlica.Leshno.ea20' on page 2 undefined on input li
-ne 18.
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-
- []
-
-[3]
-! Undefined control sequence.
-l.31 \bibiography
-                 {college}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[4] (./Yao_college.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(./Yao_college.bbl [4] [5]) [6] (./Yao_college.aux) ) 
 Here is how much of TeX's memory you used:
- 6670 strings out of 478268
- 116978 string characters out of 5846347
- 425301 words of memory out of 5000000
- 24786 multiletter control sequences out of 15000+600000
- 473864 words of font info for 47 fonts, out of 8000000 for 9000
+ 7056 strings out of 478268
+ 122140 string characters out of 5846347
+ 431611 words of memory out of 5000000
+ 25164 multiletter control sequences out of 15000+600000
+ 474211 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,67p,616b,214s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Yao_college.pdf (4 pages, 50824 bytes).
+ 60i,6n,67p,647b,240s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Yao_college.pdf (6 pages, 73133 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 43 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

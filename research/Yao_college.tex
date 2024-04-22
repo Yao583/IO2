@@ -35,7 +35,13 @@ The Inner Mongolia education authority publish hourly the current cutoffs, the n
 
 %\section{Model}
 \section{Empirical Strategy}
+Since the Inner Mongolia Ministry of Education does not record the historical choice submissions and only records the final choice, there is no data on students' rank-ordered list(ROL) of colleges. Moreover, there is no guarantee that students search their more preferred colleges first. Therefore, the order in the list wouldn't reveal students' preferences. I plan to use reduced form analysis in this paper to answer my researcg question.\\
 
+My key explanatory variable is students' exam scores. I assume that colleges with higher cutoffs are more prestigious, and hence the mechanism that maps higher-scored students to more prestigious colleges achieves better matching outcomes. To control for the impact of geography on students' preferences (some students may prefer to be closer to home while some may prefer colleges that are out of their home province), I include a binary variable which equals one if the student is assigned to a college in his/her home province and zero otherwise. For robustness checks, I try different measures of college prestige, for example the QS ranking. 
+
+Another dimension for quantifying the quality of the matchings is the number of students who reject their offers and go back to high school for the next year's College Entrance Exam (Gaokao).
+
+In 2025 Inner Mongolia will switch from IM to PA mechanism, which serves as a natrual experiment. Since students couldn't control which year they would participate in Gaokao, which is decided by their birth year. I can do a difference in difference analysis using the exogenous variation by the mechanism change in year 2025.    
 
 \bibliography{college}
 \end{document}

@@ -1,4 +1,0 @@
-\babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Motivation}{2}{0}{1}
-\beamer@sectionintoc {2}{Research Question}{4}{0}{2}
-\beamer@sectionintoc {3}{Data}{5}{0}{3}

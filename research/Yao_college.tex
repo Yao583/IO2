@@ -1,4 +1,4 @@
-\documentclass[12pt,oneside]{article}\usepackage[utf8]{inputenc}\usepackage[a4paper]{geometry}\usepackage{graphicx,setspace,appendix,mathrsfs,amsmath,amsfonts,array,tabularx,longtable,rotating,caption,mathtools,natbib}\usepackage[english]{babel}\renewcommand{\baselinestretch}{1.25}\bibliographystyle{agsm}\doublespacing\title{The impact of information acquisition in college admissions}\author{Yao Luo}\begin{document}\maketitle
+\documentclass[12pt,oneside]{article}\usepackage[utf8]{inputenc}\usepackage[a4paper]{geometry}\usepackage{graphicx,setspace,appendix,mathrsfs,amsmath,amsfonts,array,tabularx,longtable,rotating,caption,mathtools,natbib}\usepackage[english]{babel}\renewcommand{\baselinestretch}{1.25}\bibliographystyle{agsm}\doublespacing\title{Information acquisition in China's college admission mechanisms}\author{Yao Luo}\begin{document}\maketitle
 \section{Motivation}
 Every year over 10 million high school graduates join in the National College Entrance Examination (gaokao in mandarin) competing for about 7 million seats. Gaokao is currently the largest centralized matching market in the world. Achieving stable and efficient matching outcomes is extremely important in this market since it affects the welfare of so many students.
 
@@ -10,6 +10,9 @@ The most salient distinction between the PA and IM mechanism is the amount of in
 
 \cite{Immorlica.Leshno.ea20} shows theoretically mechanisms that facilitates efficient price discovery or offer relevant information on cutoffs yield approximately regret-free stable outcomes. In this paper I want to design a model to examine the impact of acquiring information of cutoffs on college admission outcomes empirically, using data from the Inner Mongolia dynamic mechanism. The additional information of college admission chances in IM intuitively should help students to improve their admission outcomes. However, since the information acquisition is costly and students have unlimited times of submission, the extra burden may harm students' welfare and students who fail to search efficiently may have unsatisfactory matching results. This tradeoff leads to ambiguity in welfare analysis and identifying winners and losers when switch from PA to IM mechanism.
 
+\cite{Immorlica.Leshno.ea20} finds an impossibility result that the a clearinghouse cannot guarantee a regret-free stable outcome. The challenge stems from the fact that students need information to know which information they should gather. In the college admission context, students need the market-clearing cutoffs of each college to determine their budget set. Then they aquire information about the colleges in the budget set and form preferences over them. But the discovered preference will impact cutoffs in return. A cycle.
+
+Information deadlock within each group in the IM mechanism, but not across groups.
 
 \section{Literature Review}
 

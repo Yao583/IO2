@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.12)  22 APR 2024 00:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.16)  27 APR 2024 23:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -410,32 +410,86 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+Package natbib Warning: Citation `Bai22' on page 1 undefined on input line 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+[1
+
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `Immorlica.Leshno.ea20' on page 2 undefined on
+ input line 11.
+
+[2]
+
+Package natbib Warning: Citation `Immorlica.Leshno.ea20' on page 3 undefined on
+ input line 13.
+
+
+Package natbib Warning: Citation `Chen.Kesten17' on page 3 undefined on input l
+ine 19.
+
+
+Package natbib Warning: Citation `Chen.Kesten19' on page 3 undefined on input l
+ine 19.
+
+
+Package natbib Warning: Citation `Chen.Pereyra.ea22' on page 3 undefined on inp
+ut line 21.
+
+
+Package natbib Warning: Citation `Kang.Ha.ea23' on page 3 undefined on input li
+ne 21.
+
+
+Package natbib Warning: Citation `Bo.Hakimov22' on page 3 undefined on input li
+ne 23.
+
+[3]
+
+Package natbib Warning: Citation `Hakimov.Kubler.ea23' on page 4 undefined on i
+nput line 25.
+
+
+Package natbib Warning: Citation `Immorlica.Leshno.ea20' on page 4 undefined on
+ input line 25.
+
+
+Package natbib Warning: Citation `Grenet.He.ea22' on page 4 undefined on input 
+line 27.
+
+
+Package natbib Warning: Citation `Bade15' on page 4 undefined on input line 27.
+
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-[4] (./Yao_college.bbl [5] [6]) [7] (./Yao_college.aux) ) 
+[5] [6]
+No file Yao_college.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[7] (./Yao_college.aux) ) 
 Here is how much of TeX's memory you used:
- 7056 strings out of 478268
- 122140 string characters out of 5846347
- 431617 words of memory out of 5000000
- 25164 multiletter control sequences out of 15000+600000
- 474211 words of font info for 48 fonts, out of 8000000 for 9000
+ 7017 strings out of 478268
+ 121397 string characters out of 5846347
+ 431247 words of memory out of 5000000
+ 25128 multiletter control sequences out of 15000+600000
+ 473864 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,67p,917b,236s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/20
-22/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/202
-2/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Yao_college.pdf (7 pages, 75583 bytes).
+ 60i,6n,67p,921b,214s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr17.pfb>
+Output written on Yao_college.pdf (7 pages, 56721 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 43 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

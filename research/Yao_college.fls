@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 PWD /Users/luoyao/Downloads/GitHub/IO2/research
+=======
+PWD /Users/luoyao/Downloads/Github/IO2/research
+>>>>>>> 5c6cd60ee28d21b0d06bacdc93d21a054dc72899
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt

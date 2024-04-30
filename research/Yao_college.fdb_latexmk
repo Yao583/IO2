@@ -1,12 +1,22 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["bibtex Yao_college"] 1714442477 "Yao_college.aux" "Yao_college.bbl" "Yao_college" 1714442478
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/harvard/agsm.bst" 1136766823 25549 e3d0f1ab4ae55e777f7352db30e2c6f7 ""
   "Yao_college.aux" 1714442478 927 1e2ad486272db4051f63ecdbe639e191 "pdflatex"
+=======
+["bibtex Yao_college"] 1714274783 "Yao_college.aux" "Yao_college.bbl" "Yao_college" 1714274785
+  "/usr/local/texlive/2022/texmf-dist/bibtex/bst/harvard/agsm.bst" 1136766823 25549 e3d0f1ab4ae55e777f7352db30e2c6f7 ""
+  "Yao_college.aux" 1714274784 960 1222bc297f8539311fff55eb420f94b0 "pdflatex"
+>>>>>>> 5c6cd60ee28d21b0d06bacdc93d21a054dc72899
   "college.bib" 0 -1 0 ""
   (generated)
   "Yao_college.bbl"
   "Yao_college.blg"
+<<<<<<< HEAD
 ["pdflatex"] 1714442477 "Yao_college.tex" "Yao_college.pdf" "Yao_college" 1714442478
+=======
+["pdflatex"] 1714274783 "Yao_college.tex" "Yao_college.pdf" "Yao_college" 1714274785
+>>>>>>> 5c6cd60ee28d21b0d06bacdc93d21a054dc72899
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -76,11 +86,17 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty" 1622581934 7147 5ac8a9ef36411064b1a501137af0fa54 ""
   "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
-  "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1676235414 2826444 f96e568e98788df5bf6064daedca58b7 ""
+  "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1673888712 2826435 e798df96c944d72cd7f12ac3353ce77a ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
+<<<<<<< HEAD
   "Yao_college.aux" 1714442478 927 1e2ad486272db4051f63ecdbe639e191 "pdflatex"
   "Yao_college.bbl" 0 -1 0 "bibtex Yao_college"
   "Yao_college.tex" 1714250824 9370 7f56e90e4b18cac8736ad7ddc119c55d ""
+=======
+  "Yao_college.aux" 1714274784 960 1222bc297f8539311fff55eb420f94b0 "pdflatex"
+  "Yao_college.bbl" 0 -1 0 "bibtex Yao_college"
+  "Yao_college.tex" 1714274780 9991 87a78468b22e298eef17e5b23a5bc3fe ""
+>>>>>>> 5c6cd60ee28d21b0d06bacdc93d21a054dc72899
   (generated)
   "Yao_college.aux"
   "Yao_college.log"

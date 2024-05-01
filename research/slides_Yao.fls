@@ -1,4 +1,4 @@
-PWD /Users/luoyao/Downloads/GitHub/IO2/research
+PWD /Users/luoyao/Downloads/Github/IO2/research
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -1409,11 +1409,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
-INPUT ./1.png
-INPUT ./1.png
-INPUT 1.png
-INPUT ./1.png
-INPUT ./1.png
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
@@ -1421,6 +1416,11 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT ./1.png
+INPUT ./1.png
+INPUT 1.png
+INPUT ./1.png
+INPUT ./1.png
 OUTPUT slides_Yao.nav
 OUTPUT slides_Yao.toc
 OUTPUT slides_Yao.snm

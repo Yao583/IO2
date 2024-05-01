@@ -83,39 +83,43 @@
 %
 \section{Motivation}
 \begin{frame}{Motivation}
-    \begin{itemize}
-        \item Parallel admission mechanism (PA) - Direct serial dictatorship with length restriction of the rank-ordered list (ROL)\\
-        \item Inner Mongolia dynamic admission mechanism (IM) - Sequential serial dictatorship + sequential moves by groups instead of individuals + time constraints\\
-        \item Theoretically and experimentally, a sequential serial dictatorship mechanism leads to higher student welfare than a direct serial dictatorship mechanism. (Hakimov et all, 2023)
-
-    \end{itemize}
-\end{frame}
-\begin{frame}{Motivation}
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.8\textwidth]{1.png}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Motivation}
 Theoretical results tell us:
 \vspace{0.5cm}
     \begin{itemize}
-        \item Traditional matching literature assume full information. But ... show that people need to conduct costly information acquisition to discover their preferences.\\
-        \item Market designers should pay attention to information flows.\\
-        \item Follow Azevedo and Loshno (2016) and Immorlica et al (2020), finding regret-free stable matching outcomes is equivalebt to finding market-clearing cutoffs.\\
-        \item Imposibility stems from information deadlocks. Regret-free stable outcomes can not be achieved.
+        \item Full information? Costly information acquisition to discover preferences.(Corcoran et al. 2018, Dynarski et al. 2020, Grenet et al. 2019)\\
+        \item Market designers should pay attention to the acquisition and flow of information.\\
+        \item Finding regret-free stable matching $\Leftrightarrow$ finding market-clearing cutoffs.(Azevedo and Loshno. 2016, Immorlica et al. 2020)\\
+        \item Information deadlocks. Market-clearing cutoffs $\rightarrow$ budget set $\rightarrow$ preference formation $\rightarrow$ determine cutoffs
     \end{itemize}
 \end{frame}
+
 \begin{frame}{Motivation}
 Real mechanism implementations:
 \vspace{0.5cm}
     \begin{itemize}
         \item Achieve approximately regret-free stable outcomes by providing external historical data with respect to perturbed capacities: Australia\\
         \item In 2023 Australia has 62,846 applicants, while China has 12,910,000 applicants. \\
-        \item Both PA and IM provides historical cutoff scores, but IM offers additional information regarding matching outcomes.\\
+        \item Parallel admission mechanism (PA) - Direct serial dictatorship (DirSD) with length restriction of the rank-ordered list (ROL)\\
+        \item Inner Mongolia dynamic admission mechanism (IM) - Sequential serial dictatorship (SeqSD) + sequential moves by groups instead of individuals + time constraints\\
         \item In 2025 Inner Mongolia will give up IM and use PA. IM began in 2007. 
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Motivation}
+Why switch from IM to PA?
+\vspace{0.5cm}
+    \begin{itemize}
+        \item Both PA and IM provides historical cutoff scores, but IM offers additional information regarding matching outcomes. Counterintuitive.\\
+        \vspace{0.2cm}
+        \item Theoretically and experimentally, SeqSD leads to higher student welfare than DirSD. (Hakimov et all. 2023)
+    \end{itemize}
+\end{frame}
+\begin{frame}{Motivation}
+Real life implementation of SeqSD: groups + time constraints
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{1.png}
+\end{figure}
 \end{frame}
 
 
@@ -123,61 +127,87 @@ Real mechanism implementations:
 
 \section{Research question}
 \begin{frame}{Research question}
+Does PA result in higher student welfare than IM? If so why?
+\vspace{0.5cm}
     \begin{itemize}
-    	\item First guess IM better than PA since IM provides additional information. Seems counterituitive.\\
-    	\item Maybe the time constraints in IM (one hour per group) make the price discovery process too costly. Maybe information communication in IM is not effective. Maybe the additional information is too noisy and detriment students' welfare instead. Or maybe IM is indeed better than PA and the policy change is purely of political intention. 
-        \item Are there better ways to communicate information to students to improve matching outcomes of IM? \\
+    	\item The time constraints in IM make the price discovery process too costly? 
+        \vspace{0.2cm}
+        \item Information communication in IM is not effective? 
+        \vspace{0.2cm}
+        \item The additional information is too noisy? 
+        \vspace{0.2cm}
+        \item Maybe IM is actually better than PA and the policy change is purely of political intention. 
+        \vspace{0.2cm}
+        \item Are there better ways to communicate information to students in IM?
     \end{itemize}
 \end{frame}
 
 \section{Contribution}
 \begin{frame}{Contribution}
     \begin{itemize}
-        \item Provide empirical and experimental results about comparisions of PA and IM mechanisms. \\
-        \item Gong and Liang (2023) shows experimentally IM mechanism achieves similar stability as DA mechanism and similar efficiency as Bostom mechanism under incomplete information, when there is low correlation of preferences.\\
+        \item Provide empirical and experimental comparisions of real-life implementation of DirSD (PA) and SeqSD (IM) mechanisms.
+        \vspace{0.2cm}
+        \item Shed light on the importance of information flows in market design and validate costly endogenous information acquisition.
+        \vspace{0.2cm}
+        \item Gong and Liang (2023) shows experimentally IM mechanism achieves similar stability as DA mechanism and similar efficiency as Bostom mechanism. Incomplete information. Low correlation of preferences.
+        \vspace{0.2cm}
         \item Chen and Kesten (2019) shows experimentally DA mechanism is better than PA in terms of stability, but the setup assumes complete information.   
     \end{itemize}
 \end{frame}
 
 
-\section{A natural experiment}
-\begin{frame}{A natural experiment}
+\section{Empirical strategy}
+\begin{frame}{Empirical strategy}
 	\begin{itemize}
-		\item Data: students' exam score, rank and admission result.
+		\item Data: students' gender, ethnicity, exam score, rank and admission result.
         \item \[y_i = \alpha_0 + \alpha_1 X_i + \beta Y_{2025} + \varepsilon_i\]
-        where $y_i$ is previliage index calculated by dividing the rank of the college (determined by cutoff scores) by the total number of colleges.\\
-        $X_i$ includes students' gender, ethnicity, rank by exam scores being normalized to be within (0,1).\\
+        $y_i$: college prestige index. Calculated by dividing the rank of the college (determined by cutoff scores of year 2022 and 2023) by the total number of colleges.\\
+        $X_i$: students' gender, ethnicity, rank by exam scores being normalized to be within (0,1).\\
         \item Implicitly assumes higher-ranked students prefer more prestigious colleges. Only care about big names without considering majors. \\
-        \item \[\rho = 1 -  \frac{6\Sigma_{i}^{N}d_i^2}{n(n^2-1)}\]
-        Spearman's rank correlation coefficient.
+        \item Spearman's rank correlation coefficient.
+        \[\rho = 1 -  \frac{6\Sigma_{i}^{N}d_i^2}{n(n^2-1)}\]
+        
     \end{itemize}
 \end{frame}
 
 \section{Experiment design}
 \begin{frame}{Experiment design}
 General setup:
+\vspace{0.5cm}
     \begin{itemize}
+        \item Exam scores are randomly and independently drawn from the IM empirical distribution between 0 and 100.
         \item Students know their exam scores, ranks, each university's quotas and historical cutoffs. 
         \item 30 students competing for 15 seats in 10 colleges. Admission rate is 50\%.
         \item Preferences are private knowledge. Students need to pay search costs to acquire information about their own preferences.\\
     \end{itemize}
-Variations:
-	\begin{itemize}
-		\item Dimension 1: The degree of correlation of preferences among students.\\
-		\item Dimension 2: The cost of information acquisiton.
-	\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Experiment design}
+Environments:
+\vspace{0.5cm}
+    \begin{itemize}
+        \item Dimension 1: The degree of correlation of preferences among students.\\
+        \item Dimension 2: The cost of information acquisiton.
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Experiment design}
 Predictions:
+\vspace{0.5cm}
     \begin{itemize}
         \item Hypothesis 1: Lower-ranked students gain more from IM compared to PA.\\
         \item Hypothesis 2: Lowest-ranked student in each group is worse off than under PA.\\ 
-        \item Hypothesis 3: Given an extended time constraint, students may oversearch.\\
-        \item Hypothesis 4: Smaller group size produces better matching outcomes.\\
-        \item Hypothesis 5: Increasing the ROL in PA improves the matching outcomes.
+        \item Hypothesis 3: IM has a higher probability of being unmatched.\\
+        \item Hypothesis 4: Given an extended time constraint, students may oversearch.\\
+        \item Hypothesis 5: Smaller group size produces better matching outcomes.\\
+        \item Hypothesis 6: Increasing the ROL in PA improves the matching outcomes.
     \end{itemize}
 \end{frame}
 
+\section{Empirical distribution}
+\begin{frame}{Empirical distribution}
+    
+\end{frame}
 
 \end{document}

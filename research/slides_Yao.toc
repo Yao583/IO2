@@ -3,5 +3,5 @@
 \beamer@sectionintoc {2}{Research question}{6}{0}{2}
 \beamer@sectionintoc {3}{Contribution}{7}{0}{3}
 \beamer@sectionintoc {4}{Empirical strategy}{8}{0}{4}
-\beamer@sectionintoc {5}{Experiment design}{9}{0}{5}
-\beamer@sectionintoc {6}{Empirical distribution}{12}{0}{6}
+\beamer@sectionintoc {5}{Experiment design}{10}{0}{5}
+\beamer@sectionintoc {6}{Empirical distribution}{15}{0}{6}

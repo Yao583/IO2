@@ -66,7 +66,7 @@
 \begin{document}
 
 \rightskip\rightmargin
-\title{The role of information acquisition in matching markets: China's college admission mechanisms}
+\title{Endogenous information acquisition in matching markets: China's college admission mechanisms}
 \author{Yao Luo}
 
 
@@ -83,10 +83,10 @@
 %
 \section{Motivation}
 \begin{frame}{Motivation}
-Theoretical results tell us:
+\large Theoretical results tell us:
 \vspace{0.5cm}
     \begin{itemize}
-        \item Full information? Costly information acquisition to discover preferences.(Corcoran et al. 2018, Dynarski et al. 2020, Grenet et al. 2019)\\
+        \item Full information? Costly information acquisition to discover preferences.(Corcoran et al. 2018) %Dynarski et al. 2020, Grenet et al. 2019)\\
         \item Market designers should pay attention to the acquisition and flow of information.\\
         \item Finding regret-free stable matching $\Leftrightarrow$ finding market-clearing cutoffs.(Azevedo and Loshno. 2016, Immorlica et al. 2020)\\
         \item Information deadlocks. Market-clearing cutoffs $\rightarrow$ budget set $\rightarrow$ preference formation $\rightarrow$ determine cutoffs
@@ -94,19 +94,19 @@ Theoretical results tell us:
 \end{frame}
 
 \begin{frame}{Motivation}
-Real mechanism implementations:
+\large Real mechanism implementations:
 \vspace{0.5cm}
     \begin{itemize}
-        \item Achieve approximately regret-free stable outcomes by providing external historical data with respect to perturbed capacities: Australia\\
-        \item In 2023 Australia has 62,846 applicants, while China has 12,910,000 applicants. \\
-        \item Parallel admission mechanism (PA) - Direct serial dictatorship (DirSD) with length restriction of the rank-ordered list (ROL)\\
-        \item Inner Mongolia dynamic admission mechanism (IM) - Sequential serial dictatorship (SeqSD) + sequential moves by groups instead of individuals + time constraints\\
+        \item Achieve approximately regret-free stable outcomes by providing external historical data + perturbed capacities: Australia.\\
+        \item 2023 Australia: 62,846, China: 12,910,000. \\
+        \item Parallel admission (PA) - Direct serial dictatorship (DirSD)+ length restriction of the rank-ordered list (ROL)\\
+        \item Inner Mongolia dynamic admission (IM) - Sequential serial dictatorship (SeqSD) + sequential moves by groups + time constraints\\
         \item In 2025 Inner Mongolia will give up IM and use PA. IM began in 2007. 
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Motivation}
-Why switch from IM to PA?
+\large Why switch from IM to PA?
 \vspace{0.5cm}
     \begin{itemize}
         \item Both PA and IM provides historical cutoff scores, but IM offers additional information regarding matching outcomes. Counterintuitive.\\
@@ -115,7 +115,7 @@ Why switch from IM to PA?
     \end{itemize}
 \end{frame}
 \begin{frame}{Motivation}
-Real life implementation of SeqSD: groups + time constraints
+\large Real life implementation of SeqSD: groups + time constraints
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{1.png}
@@ -127,7 +127,7 @@ Real life implementation of SeqSD: groups + time constraints
 
 \section{Research question}
 \begin{frame}{Research question}
-Does PA result in higher student welfare than IM? If so why?
+\large Does PA result in higher student welfare than IM? If so why?
 \vspace{0.5cm}
     \begin{itemize}
     	\item The time constraints in IM make the price discovery process too costly? 
@@ -138,12 +138,13 @@ Does PA result in higher student welfare than IM? If so why?
         \vspace{0.2cm}
         \item Maybe IM is actually better than PA and the policy change is purely of political intention. 
         \vspace{0.2cm}
-        \item Are there better ways to communicate information to students in IM?
+        \item Are there better ways to communicate information to students in IM? Change group size?
     \end{itemize}
 \end{frame}
 
 \section{Contribution}
 \begin{frame}{Contribution}
+\large
     \begin{itemize}
         \item Provide empirical and experimental comparisions of real-life implementation of DirSD (PA) and SeqSD (IM) mechanisms.
         \vspace{0.2cm}
@@ -158,48 +159,81 @@ Does PA result in higher student welfare than IM? If so why?
 
 \section{Empirical strategy}
 \begin{frame}{Empirical strategy}
-	\begin{itemize}
-		\item Data: students' gender, ethnicity, exam score, rank and admission result.
+\large
+    \begin{itemize}
         \item \[y_i = \alpha_0 + \alpha_1 X_i + \beta Y_{2025} + \varepsilon_i\]
-        $y_i$: college prestige index. Calculated by dividing the rank of the college (determined by cutoff scores of year 2022 and 2023) by the total number of colleges.\\
+        \item $y_i$: college prestige index (determined by cutoff scores of year 2022 and 2023).\\
         $X_i$: students' gender, ethnicity, rank by exam scores being normalized to be within (0,1).\\
         \item Implicitly assumes higher-ranked students prefer more prestigious colleges. Only care about big names without considering majors. \\
+    \end{itemize}
+\end{frame}
+\begin{frame}{Empirical strategy}
+\large
+	\begin{itemize}
+		\item Data: students' gender, ethnicity, exam score, rank and admission result.
         \item Spearman's rank correlation coefficient.
         \[\rho = 1 -  \frac{6\Sigma_{i}^{N}d_i^2}{n(n^2-1)}\]
         
     \end{itemize}
 \end{frame}
 
+
+
 \section{Experiment design}
 \begin{frame}{Experiment design}
-General setup:
+\large General setup:
 \vspace{0.5cm}
     \begin{itemize}
         \item Exam scores are randomly and independently drawn from the IM empirical distribution between 0 and 100.
-        \item Students know their exam scores, ranks, each university's quotas and historical cutoffs. 
         \item 30 students competing for 15 seats in 10 colleges. Admission rate is 50\%.
-        \item Preferences are private knowledge. Students need to pay search costs to acquire information about their own preferences.\\
-    \end{itemize}
+        \item Students are told that any ranking of the university is equally possible. Preferences are randomly drawn from the space of rankings.
+        \item Students only know their own exam scores and ranks. 
 
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Experiment design}
+\large
+General setup:
+\vspace{0.5cm}
+    \begin{itemize}
+        \item University's quotas and historical cutoffs are common knowledge. 
+        \item Historical cutoffs are gotten by running DirSD.
+        \item Students need to pay search costs to know their own preferences.
+        \item Prederences are private knowledge.
+        \item Students receive more rewards for being assigned to more preferred university.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Experiment design}
+\large
 Environments:
 \vspace{0.5cm}
     \begin{itemize}
         \item Dimension 1: The degree of correlation of preferences among students.\\
-        \item Dimension 2: The cost of information acquisiton.
+        One tier, two tiers and three tiers.
+        \item Dimension 2: The cost of information acquisiton.\\
+        Low and high costs.
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Experiment design}
+\large
 Predictions:
 \vspace{0.5cm}
     \begin{itemize}
         \item Hypothesis 1: Lower-ranked students gain more from IM compared to PA.\\
-        \item Hypothesis 2: Lowest-ranked student in each group is worse off than under PA.\\ 
-        \item Hypothesis 3: IM has a higher probability of being unmatched.\\
-        \item Hypothesis 4: Given an extended time constraint, students may oversearch.\\
+        \item Hypothesis 2: IM has a higher probability of being unmatched.\\
+        \item Hypothesis 3: Students are more likely to oversearch in IM.\\
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Experiment design}
+\large
+Predictions:
+\vspace{0.5cm}
+    \begin{itemize}
+        \item Hypothesis 4: Welfare: on average IM < PA, but not hold for all students.\\
         \item Hypothesis 5: Smaller group size produces better matching outcomes.\\
         \item Hypothesis 6: Increasing the ROL in PA improves the matching outcomes.
     \end{itemize}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.12)  1 MAY 2024 19:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.16)  1 MAY 2024 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1014,7 +1014,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 [4
 
 ]
-<1.png, id=180, 364.197pt x 218.781pt>
+<1.png, id=198, 364.197pt x 218.781pt>
 File: 1.png Graphic file (type png)
 <use 1.png>
 Package pdftex.def Info: 1.png  used on input line 123.
@@ -1023,7 +1023,11 @@ Package pdftex.def Info: 1.png  used on input line 123.
 
  <./1.png>] [6
 
-] [7
+]
+Overfull \vbox (5.2781pt too high) detected at line 157
+ []
+
+[7
 
 ] [8
 
@@ -1033,13 +1037,19 @@ Package pdftex.def Info: 1.png  used on input line 123.
 
 ] [11
 
+] [12
+
+] [13
+
+] [14
+
 ]
-<pdf.png, id=336, 726.642pt x 218.781pt>
+<pdf.png, id=449, 726.642pt x 218.781pt>
 File: pdf.png Graphic file (type png)
 <use pdf.png>
-Package pdftex.def Info: pdf.png  used on input line 214.
+Package pdftex.def Info: pdf.png  used on input line 248.
 (pdftex.def)             Requested size: 307.28987pt x 92.52167pt.
- [12
+ [15
 
  <./pdf.png>]
 \tf@nav=\write6
@@ -1060,28 +1070,28 @@ Package rerunfilecheck Info: File `slides_Yao.out' has not changed.
 ### simple group (level 1) entered at line 74 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27771 strings out of 478268
- 554821 string characters out of 5846347
- 820106 words of memory out of 5000000
- 45405 multiletter control sequences out of 15000+600000
- 477619 words of font info for 61 fonts, out of 8000000 for 9000
+ 27782 strings out of 478268
+ 554940 string characters out of 5846347
+ 821106 words of memory out of 5000000
+ 45412 multiletter control sequences out of 15000+600000
+ 477926 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,20n,104p,456b,905s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,20n,104p,456b,911s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12
-.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.p
-fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
-></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pf
-b></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
-pfb>
-Output written on slides_Yao.pdf (12 pages, 283731 bytes).
+/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8
+.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.p
+fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.
+pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
+10.pfb>
+Output written on slides_Yao.pdf (15 pages, 287815 bytes).
 PDF statistics:
- 412 PDF objects out of 1000 (max. 8388607)
- 336 compressed objects within 4 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 531 PDF objects out of 1000 (max. 8388607)
+ 448 compressed objects within 5 object streams
+ 37 named destinations out of 1000 (max. 500000)
  167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

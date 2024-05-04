@@ -1,32 +1,27 @@
-\documentclass[12pt,oneside]{article}\usepackage[utf8]{inputenc}\usepackage[a4paper]{geometry}\usepackage{graphicx,setspace,appendix,mathrsfs,amsmath,amsfonts,array,tabularx,longtable,rotating,caption,mathtools,natbib}\usepackage[english]{babel}\renewcommand{\baselinestretch}{1.25}\bibliographystyle{agsm}\doublespacing\title{ Endogenous information acquisition in matching markets: China's college admission mechanisms}\author{Yao Luo}\begin{document}\maketitle
+\documentclass[12pt,oneside]{article}\usepackage[utf8]{inputenc}\usepackage[a4paper]{geometry}\usepackage{graphicx,setspace,appendix,mathrsfs,amsmath,amsfonts,array,tabularx,longtable,rotating,caption,mathtools,natbib}\usepackage[english]{babel}\renewcommand{\baselinestretch}{1.25}\bibliographystyle{agsm}\doublespacing\usepackage{hyperref}\title{ Endogenous information acquisition in matching markets: China's college admission mechanisms}\author{Yao Luo}\begin{document}\maketitle
 
-\section{Motivation}
-In the matching markets it has long been assumed that agents have full information. Some recent work show that people do not know their full preferences and it is costly to acquire information (Corcoran et al. 2018, Dynarski et al. 2020, Grenet et al. 2019). Therefore, market designers should pay attention to the acquisition and flow of information besides stability.
 
-To match the stable outcomes under full information, Immorlica et al (2020) defines regret-free stable outcomes in the context of college admission and school choice. In short, it requires students to conduct optimal search while generating stable matching outcomes. Follow the work by Azevedo and Loshno (2016), Immorlica et al (2020) also shows that finding regret-free stable outcomes is equivalent to finding market-clearing cutoffs. However, students need the informatio of market-clearing cutoffs to form their budget set and conduct information acquisition within the set, which will determine their preferences and hence affect the market-clearing cutoffs. Because of this information deadlocks, it is impossible to achieve regret-free matching outcomes in real life mechanism implementations.
+\citet{grenet_preference_2022} question the common assumption in the matching literature that agents have full information on their own preferences and conclude that students' costly discovery of preferences exist. Similarly, \cite{bade_serial_2015} don't believe that agents precisely know their preferences and introduce the assumption of endogenous information acquisition into otherwise standard house allocation problems. Similar work includes \cite{corcoran_leveling_2018}, \cite{dynarski_closing_2018} and \cite{grenet_decentralizing_2022}. Therefore, market designers should pay attention to the acquisition and flow of information besides stability.
 
-According to Immorlica et al (2020), we can achieve approximately regret-free stable outcomes by providing external historical data with respect to perturbed capacities. However, China's two college admission mechanisms only provide historical cutoffs without the promise to pertub capacities. So we know certainly some students have regret because of the costly information acquisition. Every year over 10 million high school graduates join in the National College Entrance Examination (gaokao in mandarin) competing for about 7 million seats. Gaokao is currently the largest centralized matching market in the world. Achieving stable and efficient matching outcomes is extremely important in this market since it affects the welfare of so many students.
+\cite{immorlica_information_2020} defines regret-free stable outcomes in the context of college admission and school choice, and present an impossibility result that regret-free stable matching outcomes cannot be achieved because of indformation deadlocks. However, approximately regret-free stable outcomes could be achieved by providing external historical data with respect to perturbed capacities. Follow the work by \cite{azevedo_2016}, \cite{immorlica_information_2020} also shows that finding regret-free stable outcomes is equivalent to finding market-clearing cutoffs. However, China's two college admission mechanisms don't pertub capacities. So we know certainly some students have regret because of the costly information acquisition. 
 
-Most provinces in China use the Parallel admission mechanism (PA). It is a variant of direct serial dictatorship (DirSD) with the restriction on the length of the submitted rank-ordered list (ROL). The important feature is that students submit their ROL simultaneously.
+Most provinces in China use the Parallel admission mechanism (PA). It is a variant of direct serial dictatorship (DirSD) with the restriction on the length of the submitted rank-ordered list (ROL). The important feature is that students submit their ROL simultaneously. Inner Mongolia uses a dynamic admission mechanism (IM), \cite{bai_analysis_2022} has a detailed description. It can be seen as sequential serial dictatorship (SeqSD) with time constraints and the restriction that groups of students move sequentially instead of individuals.
 
-Inner Mongolia uses a dynamic admission mechanism (IM), \cite{Bai22} has a detailed description. It can be seen as sequential serial dictatorship (SeqSD) with time constraints and the restriction that groups of students move sequentially instead of individuals.
+Both PA and IM provides historical cutoff scores, but IM offers additional information regarding matching outcomes. Normally we think more information helps, so my first guess is that IM achieves higher student welfare than PA. However, in 2025 Inner Mongolia will give up IM and use PA. This seems counterintuitive to me, especially since the government has invested a lot of money on IM mechenism and has used it since 2007. 
 
-Both PA and IM provides historical cutoff scores, but IM offers additional information regarding matching outcomes. Normally we think more information helps, so my first guess is that IM achieves higher student welfare than PA. However, in 2025 Inner Mongolia will give up IM and use PA. This seems counterintuitive to me, especially the government has invested a lot of money on IM mechenism and has used it since 2007. 
-
-This puzzling fact leads to my research question: Does PA indeed achieves higher student welfare than IM? If so why does the additional information provided by IM harm student welfare instead? Who are the winners and who are the losers? Maybe the time constraints in IM (one hour per group) make the price discovery process too costly? Maybe the information communication in IM is not effective? Maybe the additional information is too noisy and detriment students' welfare instead? Or maybe IM is indeed better than PA and the policy change is purely of political intention. Moreover, are there better ways to communicate information to students to improve matching outcomes of IM?
+This puzzling fact leads to my research question: Does PA indeed achieves higher student welfare than IM? If so why does the additional information provided by IM harm student welfare instead? Who are the winners and losers in this policy change? Maybe the time constraints in IM (one hour per group) make the price discovery process too costly? Maybe the information communication in IM is not effective? Maybe the additional information is too noisy ? Or maybe IM is indeed better than PA and the policy change is purely of political intention. Moreover, are there better ways to communicate information to students to improve matching outcomes of IM?
 
 \section{Literature Review}
-\cite{Grenet.He.ea22} question the common assumption in the matching literature that agents have full information on their own preferences and conclude that students' costly discovery of preferences exist. Similarly, \cite{Bade15} don't believe that agents precisely know their preferences and introduce the assumption of endogenous information acquisition into otherwise standard house allocation problems.
 
-Theoretically, \cite{Hakimov.Kubler.ea23} examines the cost of information acquisition in centralized matching markets and how to reduce wasteful information acquisition. Similarly, \cite{Immorlica.Leshno.ea20} look at information acquisition in matching markets but with a focus on the role of price discovery. 
+Theoretically, \cite{hakimov_costly_2023} examines the cost of information acquisition in centralized matching markets and how to reduce wasteful information acquisition. Similarly, \cite{hakimov_costly_2023} look at information acquisition in matching markets but with a focus on the role of price discovery. 
 
-\cite{Chen.Kesten17} and \cite{Chen.Kesten19} compares both theoretically and experimentally the matching outcomes of PA and DA under the assumption of complete information and find that DA is better than PA in terms of stability.
+\cite{chen_chinese_2017} and \cite{chen_chinese_2019} compares both theoretically and experimentally the matching outcomes of PA and DA under the assumption of complete information and find that DA is better than PA in terms of stability.
 
-Gong and Liang (2023) shows experimentally that IM mechanism achieves similar stability as DA mechanism and similar efficiency as Boston mechanism when the correlation of preferences is low. They assume incomplete information.
+\cite{gong_2023} shows experimentally that IM mechanism achieves similar stability as DA mechanism and similar efficiency as Boston mechanism when the correlation of preferences is low. They assume incomplete information.
 
-\cite{Chen.Pereyra.ea22} focus on the  impact of time-constraint imposed by the authority, and find the matching outcomes of time-constrained dynamic mechanism (TCDM) can be worse than the stduent-proposing deferred acceptance (DA) mechanism.  
+\cite{chen_time-constrained_2022} focus on the  impact of time-constraint imposed by the authority, and find the matching outcomes of time-constrained dynamic mechanism (TCDM) can be worse than the stduent-proposing deferred acceptance (DA) mechanism.  
 
-\cite{Bo.Hakimov22} look at the university admissions in Brazil and show that dynamic mechanism can outperform the standard ones since matchings are implemented sequentially and students can revise their choices after receiving information or feedback about their current allocations. (Hakimov et all 2023) shows both theoretically and experimentally that a sequential serial dictatorship mechanism leads to higher student welfare than a direct serial dictatorship mechanism. 
+\cite{bo_iterative_2022}look at the university admissions in Brazil and show that dynamic mechanism can outperform the standard ones since matchings are implemented sequentially and students can revise their choices after receiving information or feedback about their current allocations. \cite{hakimov_costly_2023} shows both theoretically and experimentally that a sequential serial dictatorship mechanism leads to higher student welfare than a direct serial dictatorship mechanism. 
 
 \section{Contribution}
 This paper will provide empirical and experimental comparison of real-life implementation of DirSD (PA) and SeqSD (IM).
@@ -39,45 +34,32 @@ Students' exam scores, rank, ethnicity, gender and address. University's past cu
 \section{Empirical Strategy}
 
         \[y_i = \alpha_0 + \alpha_1 X_i + \beta Y_{2025} + \varepsilon_i\]
-        $y_i$: college prestige index (determined by cutoff scores of year 2022 and 2023).\\
-        $X_i$: students' gender, ethnicity, rank by exam scores being normalized to be within (0,1).\\
-        Implicitly assumes higher-ranked students prefer more prestigious colleges. Only care about big names without considering majors. \\
+where $y_i$ is college prestige index calculated by dividing college's rank (determined by the average cutoff scores of year 2022 and 2023) by the total number of colleges. $X_i$ include students' gender, ethnicity, rank by exam scores being normalized to be within (0,1) and an indicator $H_i$ which equals to one if the student was admitted by a college in his or her home province and zero otherwise. $Y_{2025}$ is a year dummy and can be seen as exogenous if we restrict our sample to only first-time exam takers. Since in China the time students take the Gaokao is purely determined by their birth date, which is independent of the policy change.
 
-I assume that colleges with higher cutoffs are more prestigious, and hence the mechanism that maps higher-scored students to more prestigious colleges achieves better matching outcomes. To control for the impact of geography on students' preferences (some students may prefer to be closer to home while some may prefer colleges that are out of their home province), I include a binary variable which equals one if the student is assigned to a college in his/her home province and zero otherwise. For robustness checks, I try different measures of college prestige, for example the QS ranking. 
+I implicitly assume that students only care about the prestige of the college. For robustness checks, I calculate the prestige index using the QS ranking. 
 
 
 
 \section{Experiment design}
-General setup:\\
-         Exam scores are randomly and independently drawn from the IM empirical distribution between 0 and 100. 30 students competing for 15 seats in 10 colleges. Admission rate is 50\%. Students are told that any ranking of the university is equally possible. Preferences are randomly drawn from the space of rankings. Students only know their own exam scores and ranks. University's quotas and historical cutoffs are common knowledge. Historical cutoffs are gotten by running DirSD. Students need to pay search costs to know their own preferences. Preferences are private knowledge. Students receive more rewards for being assigned to more preferred university.\\
-         Environments:\\
-Dimension 1: The degree of correlation of preferences among students.
-        One tier, two tiers and three tiers. Dimension 2: The cost of information acquisiton.
-        Low and high costs.\\
-        Predictions:\\
-Hypothesis 1: Lower-ranked students gain more from IM compared to PA.
- Hypothesis 2: IM has a higher probability of being unmatched.
- Hypothesis 3: Students are more likely to oversearch in IM.
-Hypothesis 4: Welfare: on average IM $<$ PA, but not hold for all students.
- Hypothesis 5: Smaller group size produces better matching outcomes.
+\subsection{General setup}
+Exam scores are randomly and independently drawn from the uniform distribution between 0 and 100. 30 students competing for 15 seats in 10 colleges. Students are told that any ranking of the university is equally possible and preferences are randomly drawn from the space of rankings. Students only know their own exam scores and ranks. University's quotas and historical cutoffs are common knowledge. Historical cutoffs are gotten by running DirSD. Students need to pay search costs to know their own preferences, which are private knowledge. Students receive more rewards for being assigned to more preferred university.
+\subsection{Environments}
+Dimension 1: The degree of correlation of preferences among students. One tier, two tiers and three tiers. It is common knowledge that tier one colleges are strictly better than tier two ones, and tier two is better than tier three. \\
+Dimension 2: The cost of information acquisiton. Low and high costs.
+\subsection{Predictions}
+Hypothesis 1: Lower-ranked students gain more from IM compared to PA.\\
+ Hypothesis 2: IM has a higher probability of being unmatched.\\
+ Hypothesis 3: Students are more likely to oversearch in IM.\\
+Hypothesis 4: Welfare: on average IM $<$ PA, but not hold for all students.\\
+ Hypothesis 5: Smaller group size produces better matching outcomes.\\
  Hypothesis 6: Increasing the ROL in PA improves the matching outcomes.
 
 
 \section{Caveats}
-In this research proposal I ignored the fact that students are applying for a specific program in the college, so implicitly I assumed that the preferences are only over college choices and students do not care about their major. It's a sensible assumption to make in the past when Chinese care a lot about the reputation about the college and do not care much about majors. However, over the years people became more realistic and care more about majors. The dispersion of admitted students' exam scores is increasing. Therefore, the objective of matching mechamism might be altered to include the preference over majors.
+Over the years people have became more rational and care more about majors. The dispersion of admitted students' exam scores within each college is increasing. Moreover, the universities determine the cutoff scores by their total quota instead of quota of each major. In many cases some major might have too many applicants while some have too few. The university would reassign the lower-ranked students to the unfilled seats of another major even though the stduents do not want it. This sometimes result in terrible assignment results and many students choose to go back to high school and retake the Gaokao. Matching students to their prefered majors might be a better objective to achieve. But the current literature has not looked in this direction.
 
-Moreover, the universities determine the cutoff scores by their total quota instead of quota of each major. In many cases some major might have too many applicants while some have too few. The university would reassign the lower-ranked students to the unfilled seats of another major even when the stduents do not want it. This sometimes result in terrible assignment result and the student has to go back to high school and retake the Gaokao. Matching students to their prefered majors might be a better objective to achieve in the Chinese Gaokao context. But the current literature has not looked in this direction because of the complication.
+One method I propose to accommodate students' major preferences is to allow for full rank of all the majors the university offers instead of only rank 5 majors in each college choice. The advantage is that students decrease the risk of being assigned to a major they hate. However, it also increases students' cost of information acquisition. The overall impact on students' welfare is ambiguous.
 
-One method I propose to accommodate students' major preferences is to allow for full rank of all the majors the university offers instead of only rank 5 majors in each college choice. Pros and cons???
-
-
-
-
-
-
-
-
-
-
+\newpage
 \bibliography{college}
 \end{document}
